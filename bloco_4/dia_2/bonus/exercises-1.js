@@ -7,6 +7,7 @@ console.log("Desordenado.");
 console.log(numbers);
 
 for (let index = 1; index < numbers.length; index += 1) {
+    
     for (jindex = 0; jindex < index; jindex += 1) {
 
         if (numbers[index] < numbers[jindex]) {
