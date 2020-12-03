@@ -51,8 +51,73 @@
         5. Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
         6. Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
+        
+        // 1- Exercício 1 
+        function alterarTextoParagrafo() {
+            let paragrafo = document.getElementsByTagName("p")[1];
+            paragrafo.innerHTML = "Daqui a 2 anos me imagino trabalhando na área de programação e sendo muito feliz !"
+
+            return paragrafo;
+        }
+
+        alterarTextoParagrafo();
+
+        // 2- Exercício 2
+
+        function changeColorToGreen(){
+          let changeColor = document.getElementsByClassName("main-content")[0];
+          changeColor.style.background = "rgb(76,164,109)";
+        }
+
+        changeColorToGreen();
+
+        // 3- Exercício 3
+
+        function changeColorToWhite(){
+          let changeColor = document.getElementsByClassName("center-content")[0];
+          changeColor.style.background = "rgb(255,255,255) ";
+        }
+
+        changeColorToWhite();
+
+        // 4- Exercício 4
+
+        function correctTitle() {
+          let title = document.getElementsByClassName("title")[0];
+          title.innerHTML = "Exercício 5.1 - JavaScript";
+
+        }
+
+        correctTitle();
+
+        // 5 - Exercício 5
+
+        function paragraphUpCase() {
+          let paragraph = document.getElementsByTagName("p")[0];
+          paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+        }
+
+        paragraphUpCase();
+
+        // 6- Exercício 6
+
+        function showParagraph(){
+          let paragraph = document.getElementsByTagName('p');
+          for ( let index = 0; index < paragraph.length; index += 1){
+            console.log(paragraph[index].innerHTML);
+          }
+        }
+
+        showParagraph();
+        
 
         
+
+        
+
+
+
+
     </script>
   </body>
 </html>
